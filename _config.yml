@@ -38,13 +38,12 @@ seo: false
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  #categories: /categories
-  #about: /about
+  categories: /categories
+  about: /about
   archives: /archives
   tags: /tags
   #sitemap: /sitemap.xml
   #commonweal: /404.html
-
 
 # Enable/Disable menu icons.
 # Icon Mapping:
@@ -71,9 +70,9 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+#scheme: Muse
 #scheme: Mist
-#scheme: Pisces
+scheme: Pisces
 
 
 # ---------------------------------------------------------------
@@ -133,9 +132,10 @@ font:
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
-  #LinkLabel: Link
-
+social:
+  GitHub: https://github.com/isanwenyu
+  微博: http://weibo.com/isanwenyu
+  # 知乎: http://www.zhihu.com/people/isanwenyu
 
 # Social Links Icons
 # Icon Mapping:
@@ -147,14 +147,14 @@ social_icons:
   # Icon Mappings.
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
-  Twitter: twitter
-  Weibo: weibo
+  微博: weibo
+  # Zhihu: zhihu
 
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
-#avatar:
+avatar: /uploads/avatar.jpg
 
 
 # Table Of Contents in the Sidebar
@@ -399,7 +399,7 @@ leancloud_visitors:
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
   # count values only if the other configs are false
-  enable: false
+  enable: true
   # custom uv span for the whole site
   site_uv: true
   site_uv_header: <i class="fa fa-user"></i>
@@ -519,7 +519,7 @@ vendors:
 
   # Internal version: 4.6.2
   # See: http://fontawesome.io/
-  fontawesome:
+  fontawesome: //maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css
 
   # Internal version: 1
   # https://www.algolia.com
@@ -528,12 +528,11 @@ vendors:
 
   # Internal version: 1.0.0
   # https://github.com/hustcc/canvas-nest.js
-  canvas_nest:
+  canvas_nest: true
   
   #three
   three:
   three_waves:
-
 
 
 # Assets
@@ -543,3 +542,18 @@ images: images
 
 # Theme version
 version: 5.1.0
+
+# @since-2016 
+since: 2016
+
+# 开启打赏功能
+reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作！
+wechatpay: /uploads/pay/wechat-reward-image.jpg
+alipay: /uploads/pay/alipay-reward-image.jpg
+
+# Wechat Subscriber
+# wechat_subscriber:
+#  enabled: true
+#  qcode: /uploads/wechat-qcode.jpg
+#  description: 欢迎您扫一扫上面的微信公众号，订阅我的博客！
+
